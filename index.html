@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>zt</title>
+</head>
+<body>
+<div id="app">
+    <h1>Button使用</h1>
+    <h2>1.基本用法</h2>
+    <div>
+        <p>Button 组件默认提供7种主题，由type属性来定义，默认为default</p>
+        <zt-button>默认按钮</zt-button>
+        <zt-button type="primary">主要按钮</zt-button>
+        <zt-button type="text">文字按钮</zt-button>
+    </div>
+
+
+
+
+    <h2>2.禁用状态</h2>
+    <div>
+        <p>你可以使用disabled属性来定义按钮是否可用，它接受一个Boolean值</p>
+        <zt-button :plain="true" :disabled="true">主要按钮</zt-button>
+        <zt-button type="primary" :disabled="true">主要按钮</zt-button>
+        <zt-button type="text" :disabled="true">文字按钮</zt-button>
+    </div>
+
+    <h2>3.自动聚焦</h2>
+    <div>
+        <p>你可以使用autofocus属性来定义按钮是否自动聚焦（自动高亮），它接受一个Boolean值。</p>
+        <zt-button >未聚焦</zt-button>
+        <zt-button :autofocus="true">已经聚焦</zt-button>
+    </div>
+
+
+    <h2> 4.默认显示颜色</h2>
+
+    <div>
+        <zt-button type="success">成功按钮</zt-button>
+        <zt-button type="warning">警告按钮</zt-button>
+        <zt-button type="danger">危险按钮</zt-button>
+        <zt-button type="info">信息按钮</zt-button>
+    </div>
+
+
+    <h2>5.hover(鼠标触发)显示的颜色</h2>
+    <div><zt-button :plain="true" type="success">成功按钮</zt-button>
+        <zt-button :plain="true" type="warning">警告按钮</zt-button>
+        <zt-button :plain="true" type="danger">危险按钮</zt-button>
+        <zt-button :plain="true" type="info">信息按钮</zt-button>
+    </div>
+
+
+
+    <h2>6.图标按钮</h2>
+    <div>
+        <p>我们这个图表按钮中的字体图标采用的是[fontawesome](http://fontawesome.io/)的字体图表，icon值为[fontawesome](http://fontawesome.io/)官方提供的class类名一致即可</p>
+        <zt-button type="success" icon="fa fa-refresh fa-spin fa-fw"></zt-button>
+        <zt-button type="success" icon="fa fa-reply">回撤</zt-button>
+        <zt-button type="success" icon="fa fa-search">搜索</zt-button>
+        <zt-button type="success" icon="fa fa-pencil-square-o">编辑</zt-button>
+    </div>
+
+
+
+    <h2>
+        7.不同尺寸
+    </h2>
+    <div>
+        <p>额外的尺寸：large、small、mini，通过设置size属性来配置它们。</p>
+        <zt-button type="primary" size="large">大型按钮</zt-button>
+        <zt-button type="primary">正常按钮</zt-button>
+        <zt-button type="primary" size="small">小型按钮</zt-button>
+        <zt-button type="primary" size="mini">超小按钮</zt-button>
+    </div>
+
+
+
+
+
+
+
+</div>
+<script src="/dist/build.js"></script>
+</body>
+</html>
