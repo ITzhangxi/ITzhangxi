@@ -66,7 +66,7 @@
 ### 7.不同尺寸
 
 > 额外的尺寸：large、small、mini，通过设置size属性来配置它们。
-```javaScript
+```JS
 <zt-button type="primary" size="large">大型按钮</zt-button>
 <zt-button type="primary">正常按钮</zt-button>
 <zt-button type="primary" size="small">小型按钮</zt-button>
